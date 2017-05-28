@@ -1,0 +1,5 @@
+
+{ 
+	"general" : "http://localhost:8888/ingeoter/wp-json",
+	"sections" : "http://localhost:8888/ingeoter/wp-json/wp/v2/pages?"
+}

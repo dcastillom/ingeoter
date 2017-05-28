@@ -1,0 +1,12 @@
+<div class="page company">
+
+	<TopMenu :titles="titles" @display="display"></TopMenu>
+
+	<div class="page-content">
+
+		<div v-for="option in options" v-if="option.slug === selected">
+			<div v-html="option.content.rendered"></div>
+		</div>
+
+	</div>
+</div>

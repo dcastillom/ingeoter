@@ -1,0 +1,14 @@
+<div class="right-menu">
+	<span class="ico-menu" @click="show = !show"></span>
+	<transition name="slide-fade">
+		<div v-if="show" class="menu">
+			<span class="close" @click="show = !show"></span>
+			<div class="menu-options">
+				<p @click="show = !show"><router-link to="/inicio">Inicio</router-link></p>
+				<p @click="show = !show"><router-link to="/empresa">Empresa</router-link></p>
+				<p @click="show = !show"><router-link to="/servicios">Servicios</router-link></p>
+				<p @click="show = !show"><router-link to="/blog">Blog</router-link></p>
+			</div>
+		</div>
+	</transition>
+</div>
