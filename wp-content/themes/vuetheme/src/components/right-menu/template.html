@@ -1,13 +1,13 @@
 <div class="right-menu">
-	<span class="ico-menu" @click="show = !show"></span>
+	<span class="ico-menu" @click="visible = !visible"></span>
 	<transition name="slide-fade">
-		<div v-if="show" class="menu">
-			<span class="close" @click="show = !show"></span>
+		<div v-if="visible" class="menu">
+			<span class="close" @click="visible = !visible"></span>
 			<div class="menu-options">
-				<p @click="show = !show"><router-link to="/inicio">Inicio</router-link></p>
-				<p @click="show = !show"><router-link to="/empresa">Empresa</router-link></p>
-				<p @click="show = !show"><router-link to="/servicios">Servicios</router-link></p>
-				<p @click="show = !show"><router-link to="/blog">Blog</router-link></p>
+				<p @click="setActiveContent('index')"><router-link to="/inicio">Inicio</router-link></p>
+				<p @click="setActiveContent('company')"><router-link to="/empresa">Empresa</router-link></p>
+				<p @click="setActiveContent('services')"><router-link to="/servicios">Servicios</router-link></p>
+				<p @click="setActiveContent('blog')"><router-link to="/blog">Blog</router-link></p>
 			</div>
 		</div>
 	</transition>

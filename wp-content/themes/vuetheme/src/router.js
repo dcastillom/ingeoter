@@ -23,7 +23,7 @@ var router = new VueRouter({
 		{ path: '/ingeoter/presentacion/', redirect: '/empresa/presentacion' },
 
 		{ path: '/ingeoter/empresa/equipo-tecnico/', redirect: '/empresa/equipo-tecnico' },
-		{ path: '/ingeoter/equipo-tecnico/', redirect: '/empresa/equipo-tecnico' }
+		{ path: '/ingeoter/equipo-tecnico/', redirect: '/empresa/equipo-tecnico' } 
 	],
 })
 
